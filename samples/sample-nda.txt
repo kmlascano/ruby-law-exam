@@ -1,0 +1,131 @@
+NON-DISCLOSURE AGREEMENT
+
+This Non-Disclosure Agreement ("Agreement") is entered into as of 15 March 2025 ("Effective Date") by and between:
+
+Disclosing Party:
+Nexaflow Pty Ltd (ACN 123 456 789), a company incorporated in Australia, having its principal place of business at Level 4, 210 Collins Street, Melbourne VIC 3000 ("Disclosing Party")
+
+and
+
+Receiving Party:
+Brightstone Consulting Group Pty Ltd (ACN 987 654 321), a company incorporated in Australia, having its principal place of business at Suite 12, 88 Pitt Street, Sydney NSW 2000 ("Receiving Party")
+
+Each of the Disclosing Party and the Receiving Party may be referred to herein individually as a "Party" and collectively as the "Parties."
+
+---
+
+RECITALS
+
+WHEREAS, the Disclosing Party possesses certain confidential and proprietary information relating to its software platform, business strategy, and client data (the "Confidential Information"); and
+
+WHEREAS, the Receiving Party desires to receive certain Confidential Information from the Disclosing Party for the purpose of evaluating a potential business partnership relating to software integration services (the "Purpose");
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements set forth herein, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties agree as follows:
+
+---
+
+1. DEFINITION OF CONFIDENTIAL INFORMATION
+
+1.1 "Confidential Information" means any and all non-public information disclosed by the Disclosing Party to the Receiving Party, either directly or indirectly, in writing, orally, or by inspection of tangible objects, that is designated as confidential or that reasonably should be understood to be confidential given the nature of the information and circumstances of disclosure. Confidential Information includes, without limitation:
+
+   (a) technical data, trade secrets, know-how, research, product plans, products, services, customer lists, markets, software, developments, inventions, processes, formulas, technology, designs, drawings, engineering, hardware configuration information, marketing materials, finances, and other business information;
+   (b) information relating to the Disclosing Party's business operations, strategies, financial condition, or prospects;
+   (c) the existence and terms of this Agreement.
+
+1.2 Confidential Information does not include information that:
+   (a) is or becomes generally known to the public without breach of any obligation owed to the Disclosing Party;
+   (b) was known to the Receiving Party prior to its disclosure by the Disclosing Party without breach of any obligation owed to the Disclosing Party;
+   (c) is received from a third party without breach of any obligation owed to the Disclosing Party;
+   (d) was independently developed by the Receiving Party without reference to or use of the Confidential Information.
+
+---
+
+2. OBLIGATIONS OF RECEIVING PARTY
+
+2.1 The Receiving Party agrees to:
+   (a) hold the Confidential Information in strict confidence;
+   (b) not disclose the Confidential Information to any third party without the prior written consent of the Disclosing Party;
+   (c) use the Confidential Information solely for the Purpose;
+   (d) protect the Confidential Information using the same degree of care it uses to protect its own confidential information, but in no event less than reasonable care;
+   (e) limit access to the Confidential Information to those of its employees, contractors, and agents who have a need to know such information for the Purpose and who are bound by confidentiality obligations no less restrictive than those set forth herein.
+
+2.2 The Receiving Party shall promptly notify the Disclosing Party upon becoming aware of any actual or suspected unauthorised use or disclosure of the Confidential Information.
+
+---
+
+3. COMPELLED DISCLOSURE
+
+If the Receiving Party is compelled by law, regulation, or court order to disclose any Confidential Information, the Receiving Party shall, to the extent legally permitted, provide the Disclosing Party with prompt prior written notice of such requirement so that the Disclosing Party may seek a protective order or other appropriate relief. If disclosure is ultimately required, the Receiving Party shall disclose only that portion of the Confidential Information that is legally required to be disclosed.
+
+---
+
+4. RETURN OR DESTRUCTION OF CONFIDENTIAL INFORMATION
+
+Upon written request by the Disclosing Party, or upon termination or expiration of this Agreement, the Receiving Party shall promptly return or destroy (at the Disclosing Party's election) all materials containing Confidential Information, including all copies, extracts, and summaries thereof, and shall certify in writing to the Disclosing Party that it has done so.
+
+---
+
+5. INTELLECTUAL PROPERTY
+
+Nothing in this Agreement grants the Receiving Party any intellectual property rights, licence, or ownership interest in the Confidential Information. All Confidential Information remains the sole and exclusive property of the Disclosing Party.
+
+---
+
+6. TERM
+
+This Agreement shall commence on the Effective Date and shall remain in force for a period of three (3) years unless earlier terminated by either Party upon thirty (30) days' prior written notice to the other Party. The obligations of confidentiality shall survive termination of this Agreement for a further period of five (5) years.
+
+---
+
+7. REMEDIES
+
+The Receiving Party acknowledges that any breach of this Agreement may cause the Disclosing Party irreparable harm for which monetary damages would be an inadequate remedy, and that the Disclosing Party shall be entitled to seek equitable relief, including injunction and specific performance, in addition to all other remedies available at law or in equity.
+
+---
+
+8. GOVERNING LAW AND JURISDICTION
+
+This Agreement shall be governed by and construed in accordance with the laws of the State of Victoria, Australia. The Parties submit to the exclusive jurisdiction of the courts of Victoria in respect of any dispute arising out of or in connection with this Agreement.
+
+---
+
+9. ENTIRE AGREEMENT
+
+This Agreement constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, understandings, negotiations, and representations, whether oral or written, relating to such subject matter.
+
+---
+
+10. AMENDMENTS
+
+This Agreement may not be amended or modified except by a written instrument signed by authorised representatives of both Parties.
+
+---
+
+11. WAIVER
+
+No failure or delay by either Party in exercising any right, power, or privilege under this Agreement shall operate as a waiver thereof, nor shall any single or partial exercise of any right, power, or privilege preclude any other or further exercise thereof.
+
+---
+
+12. SEVERABILITY
+
+If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect.
+
+---
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
+
+NEXAFLOW PTY LTD
+
+Signature: ___________________________
+Name:      Marcus Thornton
+Title:     Chief Executive Officer
+Date:      15 March 2025
+
+
+BRIGHTSTONE CONSULTING GROUP PTY LTD
+
+Signature: ___________________________
+Name:      Sandra Okafor
+Title:     Managing Director
+Date:      15 March 2025
