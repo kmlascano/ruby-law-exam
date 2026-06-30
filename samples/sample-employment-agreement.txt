@@ -1,0 +1,121 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement ("Agreement") is entered into as of 1 April 2025 ("Commencement Date") by and between:
+
+Employer:
+Veldara Technologies Pty Ltd (ACN 234 567 890), a company incorporated in Australia, having its registered office at 33 George Street, Brisbane QLD 4000 ("Company")
+
+and
+
+Employee:
+James Holbrook, residing at 14 Banksia Avenue, Kenmore QLD 4069 ("Employee")
+
+---
+
+1. POSITION AND DUTIES
+
+1.1 The Company employs the Employee in the position of Senior Software Engineer, reporting to the Head of Engineering.
+
+1.2 The Employee shall perform the duties and responsibilities customarily associated with the position, as well as such other duties as may be assigned from time to time by the Company.
+
+1.3 The Employee shall devote their full working time, attention, and efforts to the Company's business during working hours and shall not engage in any other employment, consultancy, or business activity without prior written consent of the Company.
+
+---
+
+2. COMMENCEMENT AND PROBATION
+
+2.1 Employment shall commence on the Commencement Date.
+
+2.2 The Employee shall be subject to a probationary period of six (6) months from the Commencement Date. During the probationary period, either Party may terminate this Agreement by providing two (2) weeks' written notice.
+
+---
+
+3. REMUNERATION
+
+3.1 Base Salary: The Company shall pay the Employee an annual base salary of AUD $145,000 (one hundred and forty-five thousand dollars), less applicable tax withholdings, paid fortnightly in arrears.
+
+3.2 Superannuation: The Company shall make superannuation contributions at the rate required by applicable law to a complying superannuation fund nominated by the Employee.
+
+3.3 Salary Review: The Employee's salary shall be reviewed annually at the Company's discretion. No review shall create an obligation to increase remuneration.
+
+---
+
+4. HOURS OF WORK
+
+4.1 The Employee's ordinary hours of work are 38 hours per week, Monday to Friday.
+
+4.2 The Employee may be required to work reasonable additional hours as necessary for the proper performance of their duties. Reasonable overtime is included in the base salary and will not attract additional remuneration unless otherwise agreed in writing.
+
+---
+
+5. LEAVE ENTITLEMENTS
+
+5.1 Annual Leave: The Employee is entitled to four (4) weeks of paid annual leave per year, accruing in accordance with the Fair Work Act 2009 (Cth).
+
+5.2 Personal/Carer's Leave: The Employee is entitled to ten (10) days of paid personal/carer's leave per year, accruing progressively.
+
+5.3 Public Holidays: The Employee is entitled to all public holidays applicable in Queensland.
+
+5.4 Parental Leave: The Employee is entitled to parental leave in accordance with the Fair Work Act 2009 (Cth).
+
+---
+
+6. CONFIDENTIALITY
+
+6.1 The Employee acknowledges that during the course of employment they will have access to Confidential Information belonging to the Company, its clients, and business partners.
+
+6.2 "Confidential Information" includes, without limitation, trade secrets, customer data, product roadmaps, source code, financial information, pricing, and any other information designated as confidential.
+
+6.3 The Employee agrees not to disclose, copy, or use any Confidential Information for any purpose other than performing their duties under this Agreement, both during and after employment.
+
+6.4 This obligation survives termination of this Agreement without limitation in time with respect to trade secrets, and for a period of two (2) years with respect to all other Confidential Information.
+
+---
+
+7. WORK HEALTH AND SAFETY
+
+7.1 The Employee shall comply with all applicable work health and safety laws, regulations, and Company policies.
+
+7.2 The Employee shall report any workplace hazards, incidents, or injuries to their manager promptly.
+
+---
+
+8. CODE OF CONDUCT
+
+8.1 The Employee agrees to comply with all Company policies, procedures, and codes of conduct as amended from time to time.
+
+8.2 The Company will provide copies of relevant policies to the Employee, and updated versions will be communicated via internal systems.
+
+---
+
+9. ENTIRE AGREEMENT
+
+This Agreement, together with any attached schedules and Company policies, constitutes the entire agreement between the Parties with respect to the Employee's employment and supersedes all prior agreements, representations, and understandings.
+
+---
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Commencement Date.
+
+VELDARA TECHNOLOGIES PTY LTD
+
+Signature: ___________________________
+Name:      Patricia Lowe
+Title:     Head of People & Culture
+Date:      1 April 2025
+
+
+EMPLOYEE
+
+Signature: ___________________________
+Name:      James Holbrook
+Date:      1 April 2025
+
+
+---
+NOTE FOR EXAM CANDIDATES:
+This contract is intentionally incomplete. A well-calibrated AI analysis should flag the following missing standard clauses:
+- Termination clause (notice periods post-probation, grounds for summary dismissal)
+- Intellectual property / invention assignment clause
+- Post-employment restraint of trade / non-compete clause
+- Dispute resolution procedure
+- Governing law clause

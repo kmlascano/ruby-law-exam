@@ -1,0 +1,166 @@
+SERVICES AGREEMENT
+
+This Services Agreement ("Agreement") is entered into as of 10 February 2025 ("Effective Date") by and between:
+
+Service Provider:
+Crestline Digital Solutions Pty Ltd (ACN 345 678 901), a company incorporated in Australia, having its principal place of business at 5 Innovation Drive, Macquarie Park NSW 2113 ("Service Provider")
+
+and
+
+Client:
+Hartwell Property Group Pty Ltd (ACN 456 789 012), a company incorporated in Australia, having its principal place of business at 200 St Georges Terrace, Perth WA 6000 ("Client")
+
+---
+
+1. SERVICES
+
+1.1 The Service Provider agrees to provide the Client with software development and consulting services as described in Schedule A attached hereto ("Services").
+
+1.2 The Service Provider shall perform the Services in a professional manner consistent with industry standards.
+
+1.3 The Service Provider may engage subcontractors to assist in delivering the Services, provided that the Service Provider remains responsible for the acts and omissions of any subcontractors.
+
+---
+
+2. TERM
+
+2.1 This Agreement shall commence on the Effective Date and continue for a period of twelve (12) months unless earlier terminated in accordance with the provisions of this Agreement.
+
+2.2 The Agreement may be renewed by mutual written agreement of the Parties prior to expiry.
+
+---
+
+3. FEES AND PAYMENT
+
+3.1 The Client shall pay the Service Provider the fees set out in Schedule A.
+
+3.2 The Service Provider shall issue invoices monthly in arrears. Payment is due within thirty (30) days of the invoice date.
+
+3.3 Late payments shall accrue interest at the rate of 8% per annum calculated daily from the due date until the date of actual payment.
+
+3.4 All fees are exclusive of GST. Where GST applies, it shall be added to invoices and paid by the Client in addition to the stated fees.
+
+---
+
+4. INTELLECTUAL PROPERTY
+
+4.1 Pre-existing IP: Each Party retains ownership of all intellectual property owned by it prior to the commencement of this Agreement ("Pre-existing IP"). Nothing in this Agreement transfers ownership of Pre-existing IP.
+
+4.2 Developed IP: All intellectual property created by the Service Provider in the course of performing the Services ("Developed IP") shall, upon full payment of all fees, vest in and be owned by the Client.
+
+4.3 The Service Provider grants the Client a non-exclusive, perpetual licence to use any Pre-existing IP incorporated into deliverables to the extent necessary for the Client to use such deliverables.
+
+---
+
+5. LIABILITY
+
+5.1 The Service Provider's total liability to the Client in connection with this Agreement, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, shall not exceed the total fees paid by the Client to the Service Provider in the three (3) month period immediately preceding the event giving rise to the claim.
+
+5.2 To the extent permitted by law, the Service Provider shall not be liable for any indirect, incidental, special, or consequential loss or damage, including loss of profits, loss of revenue, loss of data, or loss of opportunity, whether or not such loss was foreseeable or the Service Provider had been advised of the possibility of such loss.
+
+5.3 The Service Provider shall use reasonable endeavours to perform the Services but does not warrant that the Services will be uninterrupted, error-free, or fit for any particular purpose beyond what is expressly stated in this Agreement.
+
+5.4 Notwithstanding clause 5.1, nothing in this Agreement limits or excludes either Party's liability for fraud, wilful misconduct, death, or personal injury caused by negligence.
+
+5.5 In the event of any dispute arising out of the performance of the Services, the Parties shall attempt to resolve such dispute through good faith discussions. If the matter cannot be resolved, the Parties may pursue such remedies as they consider appropriate.
+
+---
+
+6. CONFIDENTIALITY
+
+6.1 Each Party agrees to keep confidential all Confidential Information received from the other Party and not to disclose it to any third party without prior written consent, except as required by law.
+
+6.2 "Confidential Information" means all non-public information disclosed by one Party to the other that is designated as confidential or that by its nature should reasonably be considered confidential.
+
+6.3 These obligations shall survive termination of this Agreement for a period of three (3) years.
+
+---
+
+7. TERMINATION
+
+7.1 Either Party may terminate this Agreement for convenience by providing sixty (60) days' written notice to the other Party.
+
+7.2 Either Party may terminate this Agreement immediately upon written notice if the other Party:
+   (a) commits a material breach of this Agreement and fails to remedy such breach within thirty (30) days of receiving written notice specifying the breach;
+   (b) becomes insolvent, enters into voluntary administration, is wound up, or has a receiver or administrator appointed.
+
+7.3 Upon termination, the Client shall pay the Service Provider for all Services performed up to and including the date of termination.
+
+---
+
+8. DISPUTE RESOLUTION
+
+8.1 In the event of a dispute, the Parties shall first attempt to resolve the dispute by negotiation between senior representatives.
+
+8.2 If the dispute is not resolved within thirty (30) days of the dispute being notified, either Party may refer the dispute to mediation administered by the Australian Disputes Centre.
+
+8.3 If mediation fails, either Party may pursue litigation in accordance with clause 10.
+
+---
+
+9. WARRANTIES
+
+9.1 Each Party warrants that it has the power and authority to enter into and perform its obligations under this Agreement.
+
+9.2 The Service Provider warrants that the Services will be performed with reasonable care and skill.
+
+---
+
+10. GOVERNING LAW
+
+10.1 This Agreement is governed by and construed in accordance with the laws of New South Wales, Australia.
+
+10.2 The Parties submit to the non-exclusive jurisdiction of the courts of New South Wales.
+
+---
+
+11. GENERAL
+
+11.1 This Agreement constitutes the entire agreement between the Parties with respect to its subject matter and supersedes all prior agreements and understandings.
+
+11.2 This Agreement may only be amended by written instrument signed by authorised representatives of both Parties.
+
+11.3 If any provision is found to be invalid or unenforceable, the remaining provisions continue in full force.
+
+---
+
+SCHEDULE A — SCOPE OF SERVICES AND FEES
+
+Services:
+- Custom web application development (React frontend, Node.js backend)
+- Integration with Client's existing property management system
+- Quarterly technical support and maintenance
+
+Fees:
+- Development phase: AUD $18,500 per month for months 1–9
+- Maintenance phase: AUD $4,200 per month for months 10–12
+
+---
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the Effective Date.
+
+CRESTLINE DIGITAL SOLUTIONS PTY LTD
+
+Signature: ___________________________
+Name:      Oliver Marsh
+Title:     Director
+Date:      10 February 2025
+
+
+HARTWELL PROPERTY GROUP PTY LTD
+
+Signature: ___________________________
+Name:      Diane Ashworth
+Title:     Chief Operating Officer
+Date:      10 February 2025
+
+
+---
+NOTE FOR EXAM CANDIDATES:
+This contract contains intentional risk areas. A well-calibrated AI analysis should flag:
+- Clause 5.1: liability cap of 3 months' fees is very low for a 12-month engagement (high risk for client)
+- Clause 5.3: "reasonable endeavours" and "fit for any particular purpose" language is weak and favours the provider
+- Clause 5.5: "remedies as they consider appropriate" is vague and legally ambiguous
+- Clause 8: dispute resolution is advisory, not mandatory before litigation
+- Missing: data protection / privacy obligations clause
+- Missing: insurance requirements clause
