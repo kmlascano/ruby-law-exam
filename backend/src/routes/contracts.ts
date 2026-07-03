@@ -83,7 +83,7 @@ contractRoutes.post('/upload', upload.single('file'), async (request: Request, r
 
     const result = await analyseContract(request.file.buffer, request.file.mimetype, request.file.originalname);
 
-    response.json({
+    response.status(201).json({
       data: result,
       meta: {
         fromCache: result.fromCache === true,
