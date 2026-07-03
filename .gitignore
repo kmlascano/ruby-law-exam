@@ -7,11 +7,12 @@ build/
 
 # Environment files — NEVER commit these
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 backend/.env
+backend/.env.*
 frontend/.env
-
+frontend/.env.*
 # Uploaded files (if stored locally)
 uploads/
 

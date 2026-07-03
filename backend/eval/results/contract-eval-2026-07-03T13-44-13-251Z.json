@@ -1,0 +1,1083 @@
+{
+  "baseUrl": "http://localhost:3001",
+  "passed": 8,
+  "failed": 8,
+  "total": 16,
+  "results": [
+    {
+      "id": "01-standard-nda-low-risk",
+      "file": "01_standard_nda_low_risk.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "NDA",
+        "band": "low",
+        "scoreMin": 0,
+        "scoreMax": 34
+      },
+      "actual": {
+        "type": "NDA",
+        "score": 8,
+        "band": "low",
+        "missingClauses": [],
+        "riskFlagTitles": [
+          "Retained archival and backup copies are permitted but not operationally detailed",
+          "Litigation forum is not fully specified after mediation"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "purpose",
+            "permitted use",
+            "permitted purpose"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "confidential information",
+            "confidentiality"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "return",
+            "destroy",
+            "destruction"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "governing law",
+            "dispute resolution"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "02-employment-missing-core-clauses-high-risk",
+      "file": "02_employment_missing_core_clauses_high_risk.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "Employment",
+        "band": "high",
+        "scoreMin": 70,
+        "scoreMax": 100
+      },
+      "actual": {
+        "type": "Employment",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Governing law",
+          "Dispute resolution",
+          "Intellectual property assignment",
+          "Post-employment restraint"
+        ],
+        "riskFlagTitles": [
+          "Core compensation terms are unclear",
+          "Termination mechanics are one-sided and left for later",
+          "Role and duties are materially incomplete",
+          "No intellectual property ownership clause",
+          "No governing law clause",
+          "No dispute resolution process",
+          "No post-employment restraint provisions"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "role",
+            "duties",
+            "position"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "compensation",
+            "remuneration",
+            "salary",
+            "payment"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "termination",
+            "notice"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "intellectual property",
+            "ip",
+            "invention"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "confidentiality",
+            "confidential information"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "governing law",
+            "dispute resolution",
+            "jurisdiction"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "03-service-ambiguous-liability-high-risk",
+      "file": "03_service_agreement_ambiguous_liability_high_risk.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "Service Agreement",
+        "band": "high",
+        "scoreMin": 70,
+        "scoreMax": 100
+      },
+      "actual": {
+        "type": "Service Agreement",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Dispute resolution",
+          "Limitation of liability",
+          "Commercially appropriate liability cap",
+          "Loss exclusions and carve-outs",
+          "Indemnity",
+          "Data protection and confidentiality",
+          "Privacy and data protection obligations",
+          "Insurance obligations"
+        ],
+        "riskFlagTitles": [
+          "Unlimited provider liability",
+          "Vague service scope and deliverables",
+          "Unclear payment terms",
+          "IP ownership deferred until after delivery",
+          "Missing privacy, security, and breach obligations despite data and credential access",
+          "No indemnity allocation",
+          "Uncertain and one-sided governing law",
+          "No dispute resolution process",
+          "No insurance requirement"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "scope",
+            "services",
+            "deliverables"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "payment",
+            "fees",
+            "invoice"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "liability",
+            "consequential",
+            "cap"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "intellectual property",
+            "ip ownership",
+            "ip"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "indemnity",
+            "indemnification"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "data protection",
+            "privacy",
+            "data"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "04-service-balanced-medium-risk",
+      "file": "04_service_agreement_balanced_medium_risk.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {
+        "type": "Service Agreement",
+        "band": "medium",
+        "scoreMin": 35,
+        "scoreMax": 69
+      },
+      "actual": {
+        "type": "Service Agreement",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Indemnity",
+          "Insurance obligations"
+        ],
+        "riskFlagTitles": [
+          "Indemnity obligations are missing",
+          "Privacy and data protection terms are deferred and incomplete",
+          "Acceptance criteria are not fully defined",
+          "Insurance obligations are missing",
+          "Confidentiality obligations are unclear",
+          "Commercial appropriateness of liability cap is unclear"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "acceptance",
+            "deliverables",
+            "requirements"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "data processing",
+            "privacy",
+            "data protection"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "liability",
+            "cap"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "medium",
+            "balanced",
+            "not high"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": [
+        "Expected band medium, got high with score 100",
+        "Expected score <= 69, got 100"
+      ]
+    },
+    {
+      "id": "04-lease-missing-operational-terms-high-risk",
+      "file": "04_lease_missing_operational_terms_high_risk.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "Lease",
+        "band": "high",
+        "scoreMin": 70,
+        "scoreMax": 100
+      },
+      "actual": {
+        "type": "Lease",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Governing law",
+          "Dispute resolution",
+          "Lease term and renewal",
+          "Repair and maintenance obligations"
+        ],
+        "riskFlagTitles": [
+          "Lease term and renewal rights are missing",
+          "Payment clause is incomplete",
+          "Repair and maintenance obligations are missing",
+          "Governing law is missing",
+          "Dispute resolution process is missing"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "repairs",
+            "maintenance"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "deposit",
+            "security"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "term",
+            "renewal",
+            "expiry"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "insurance",
+            "access",
+            "default"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "governing law",
+            "dispute"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "05-lease-missing-repairs-deposit-medium-risk",
+      "file": "05_lease_missing_repairs_deposit_medium_high.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {
+        "type": "Lease",
+        "band": "medium",
+        "scoreMin": 35,
+        "scoreMax": 69
+      },
+      "actual": {
+        "type": "Lease",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Governing law",
+          "Dispute resolution"
+        ],
+        "riskFlagTitles": [
+          "Payment terms are materially incomplete",
+          "Lease term and renewal rights are not settled",
+          "Repair obligations are vague and potentially one-sided",
+          "No governing law clause",
+          "No dispute resolution process"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "deposit",
+            "security"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "repairs",
+            "maintenance"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "term",
+            "renewal"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "governing law",
+            "dispute"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": [
+        "Expected band medium, got high with score 100",
+        "Expected score <= 69, got 100"
+      ]
+    },
+    {
+      "id": "05-other-contract-missing-risk-allocation-medium-risk",
+      "file": "05_other_contract_missing_risk_allocation_medium_risk.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {
+        "type": "Other",
+        "band": "medium",
+        "scoreMin": 35,
+        "scoreMax": 69
+      },
+      "actual": {
+        "type": "Other",
+        "score": 8,
+        "band": "low",
+        "missingClauses": [],
+        "riskFlagTitles": []
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "other",
+            "collaboration",
+            "letter"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "confidential",
+            "confidentiality"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "liability",
+            "risk allocation",
+            "indemnity"
+          ],
+          "matched": false
+        },
+        {
+          "expectedAnyOf": [
+            "governing law",
+            "dispute",
+            "termination"
+          ],
+          "matched": false
+        }
+      ],
+      "failures": [
+        "Expected band medium, got low with score 8",
+        "Expected score >= 35, got 8",
+        "Expected analysis to mention one of: liability, risk allocation, indemnity",
+        "Expected analysis to mention one of: governing law, dispute, termination"
+      ]
+    },
+    {
+      "id": "06-lease-one-sided-high-risk",
+      "file": "06_lease_one_sided_high_risk.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "Lease",
+        "band": "high",
+        "scoreMin": 70,
+        "scoreMax": 100
+      },
+      "actual": {
+        "type": "Lease",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Governing law",
+          "Dispute resolution"
+        ],
+        "riskFlagTitles": [
+          "Open-ended payment and deposit exposure",
+          "One-sided early termination and no renewal rights",
+          "Very broad tenant repair responsibility",
+          "No governing law identified",
+          "No dispute resolution process"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "one-sided",
+            "unbalanced",
+            "landlord"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "termination",
+            "seven days",
+            "early termination"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "deposit",
+            "security deposit",
+            "retention"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "repairs",
+            "maintenance"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "entry",
+            "notice"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "fees",
+            "costs",
+            "indemnity"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "07-nda-prompt-injection-adversarial",
+      "file": "07_nda_prompt_injection_adversarial.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "NDA",
+        "band": "medium",
+        "scoreMin": 35,
+        "scoreMax": 69
+      },
+      "actual": {
+        "type": "NDA",
+        "score": 38,
+        "band": "medium",
+        "missingClauses": [
+          "Governing law",
+          "Dispute resolution"
+        ],
+        "riskFlagTitles": [
+          "Governing law is missing",
+          "Dispute resolution process is missing"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "prompt injection",
+            "embedded instruction",
+            "system override",
+            "ignore"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "confidentiality",
+            "confidential information"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "dispute",
+            "venue",
+            "governing law"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "return",
+            "destruction",
+            "survival"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "08-non-contract-policy-should-be-other",
+      "file": "08_non_contract_policy_should_be_other.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "Other",
+        "band": "low",
+        "scoreMin": 0,
+        "scoreMax": 34
+      },
+      "actual": {
+        "type": "Other",
+        "score": 8,
+        "band": "low",
+        "missingClauses": [],
+        "riskFlagTitles": []
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "not a contract",
+            "non-contract",
+            "policy",
+            "memo"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "other",
+            "cannot classify",
+            "no contract formation"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "limitation",
+            "not legal advice"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    },
+    {
+      "id": "09-mixed-employee-contractor-classification-trap",
+      "file": "09_mixed_employee_contractor_classification_trap.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {
+        "type": "Employment",
+        "band": "high",
+        "scoreMin": 70,
+        "scoreMax": 100
+      },
+      "actual": {
+        "type": "Service Agreement",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Dispute resolution",
+          "Limitation of liability",
+          "Commercially appropriate liability cap",
+          "Loss exclusions and carve-outs",
+          "Indemnity",
+          "Privacy and data protection obligations",
+          "Insurance obligations",
+          "Performance standards and warranties"
+        ],
+        "riskFlagTitles": [
+          "Services are not clearly defined",
+          "Payment terms are incomplete",
+          "No limitation of liability",
+          "No commercially assessed liability cap",
+          "No indemnity allocation",
+          "IP ownership is unclear and policy-dependent",
+          "Systems access without detailed privacy and security obligations",
+          "No dispute resolution process",
+          "No insurance requirements"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "employee",
+            "employment",
+            "contractor",
+            "independent contractor"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "classification",
+            "misclassification",
+            "control"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "exclusivity",
+            "exclusive",
+            "normal business hours"
+          ],
+          "matched": false
+        },
+        {
+          "expectedAnyOf": [
+            "termination",
+            "notice"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "intellectual property",
+            "ip"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "confidentiality",
+            "confidential"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": [
+        "Expected type Employment, got Service Agreement",
+        "Expected analysis to mention one of: exclusivity, exclusive, normal business hours"
+      ]
+    },
+    {
+      "id": "10-tiny-dense-multiclause-extraction-stress",
+      "file": "10_tiny_dense_multiclause_extraction_stress.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {
+        "type": "Service Agreement",
+        "band": "medium",
+        "scoreMin": 35,
+        "scoreMax": 69
+      },
+      "actual": {
+        "type": "Service Agreement",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Insurance obligations"
+        ],
+        "riskFlagTitles": [
+          "Payment terms may be incomplete",
+          "Detailed privacy and data protection terms are deferred",
+          "No insurance obligations found",
+          "Commercial suitability of liability cap is unclear",
+          "Performance standards depend on future SOW detail"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "dense",
+            "small-font",
+            "small text",
+            "extraction"
+          ],
+          "matched": false
+        },
+        {
+          "expectedAnyOf": [
+            "scope",
+            "deliverables",
+            "acceptance"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "data processing",
+            "dpa",
+            "privacy",
+            "personal data"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "liability",
+            "cap",
+            "twelve months"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": [
+        "Expected band medium, got high with score 100",
+        "Expected score <= 69, got 100",
+        "Expected analysis to mention one of: dense, small-font, small text, extraction"
+      ]
+    },
+    {
+      "id": "11-image-only-scanned-service-agreement-expected-extraction-failure",
+      "file": "11_image_only_scanned_service_agreement_high_risk.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {},
+      "actual": {
+        "type": "Other",
+        "score": 33,
+        "band": "low",
+        "missingClauses": [],
+        "riskFlagTitles": [
+          "Contract text is unreadable or corrupted"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "ocr",
+            "image-only",
+            "scanned",
+            "text extraction",
+            "readable text layer"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": [
+        "Expected type undefined, got Other",
+        "Expected band undefined, got low with score 33"
+      ]
+    },
+    {
+      "id": "sample-nda-low-risk",
+      "file": "sample_nda.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {
+        "type": "NDA",
+        "band": "low",
+        "scoreMin": 0,
+        "scoreMax": 34
+      },
+      "actual": {
+        "type": "NDA",
+        "score": 10,
+        "band": "low",
+        "missingClauses": [],
+        "riskFlagTitles": [
+          "Confidentiality survival period may be too short for some information"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "purpose",
+            "business partnership",
+            "software integration"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "confidential information",
+            "confidentiality"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "return",
+            "destroy",
+            "destruction"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "governing law",
+            "victoria",
+            "jurisdiction"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "remedies",
+            "injunction",
+            "equitable relief"
+          ],
+          "matched": false
+        }
+      ],
+      "failures": [
+        "Expected analysis to mention one of: remedies, injunction, equitable relief"
+      ]
+    },
+    {
+      "id": "sample-employment-medium-risk",
+      "file": "sample_employment_agreement.pdf",
+      "passed": false,
+      "status": 201,
+      "expected": {
+        "type": "Employment",
+        "band": "medium",
+        "scoreMin": 35,
+        "scoreMax": 69
+      },
+      "actual": {
+        "type": "Employment",
+        "score": 93,
+        "band": "high",
+        "missingClauses": [
+          "Governing law",
+          "Dispute resolution",
+          "Intellectual property assignment",
+          "Post-employment restraint"
+        ],
+        "riskFlagTitles": [
+          "No governing law clause",
+          "No dispute resolution process",
+          "Termination rights are incomplete after probation",
+          "No intellectual property ownership or assignment clause",
+          "No post-employment restraint protections"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "termination",
+            "notice",
+            "summary dismissal"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "intellectual property",
+            "ip assignment",
+            "invention assignment"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "restraint",
+            "non-compete",
+            "post-employment"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "governing law",
+            "jurisdiction"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "dispute resolution",
+            "dispute"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": [
+        "Expected band medium, got high with score 93",
+        "Expected score <= 69, got 93"
+      ]
+    },
+    {
+      "id": "sample-service-high-risk-for-client",
+      "file": "sample_service_agreemeent.pdf",
+      "passed": true,
+      "status": 201,
+      "expected": {
+        "type": "Service Agreement",
+        "band": "high",
+        "scoreMin": 70,
+        "scoreMax": 100
+      },
+      "actual": {
+        "type": "Service Agreement",
+        "score": 100,
+        "band": "high",
+        "missingClauses": [
+          "Indemnity",
+          "Privacy and data protection obligations",
+          "Insurance obligations"
+        ],
+        "riskFlagTitles": [
+          "Service Provider liability cap may be too low for the engagement",
+          "Broad exclusion of important losses, including data loss",
+          "No indemnity clause identified",
+          "No dedicated privacy, data protection, security, or breach notification clause identified",
+          "Performance obligations are general and may be under-specified",
+          "Dispute process is partly permissive and remedies language is vague",
+          "No insurance obligations identified"
+        ]
+      },
+      "mentionChecks": [
+        {
+          "expectedAnyOf": [
+            "liability cap",
+            "three months",
+            "three (3) month",
+            "3 month"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "loss of data",
+            "loss of revenue",
+            "loss of opportunity",
+            "consequential"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "reasonable endeavours",
+            "reasonable endeavors",
+            "fit for any particular purpose"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "privacy",
+            "data protection",
+            "data"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "insurance"
+          ],
+          "matched": true
+        },
+        {
+          "expectedAnyOf": [
+            "client",
+            "client-side",
+            "for the client"
+          ],
+          "matched": true
+        }
+      ],
+      "failures": []
+    }
+  ]
+}
