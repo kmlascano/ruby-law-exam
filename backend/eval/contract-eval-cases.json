@@ -1,0 +1,256 @@
+[
+  {
+    "id": "01-standard-nda-low-risk",
+    "file": "01_standard_nda_low_risk.pdf",
+    "aliases": ["01_standard_nda_low_risk(3).pdf"],
+    "acceptedTypes": ["NDA", "Non-Disclosure Agreement"],
+    "acceptedBands": ["low"],
+    "scoreMin": 0,
+    "scoreMax": 34,
+    "mustMentionAny": [
+      ["purpose", "permitted use", "permitted purpose"],
+      ["confidential information", "confidentiality"],
+      ["survival", "survive", "trade secrets"],
+      ["return", "destroy", "destruction"],
+      ["governing law", "dispute resolution", "mediation", "jurisdiction"]
+    ],
+    "notes": "Baseline sanity check. Should be low risk and cite exact clauses/findings."
+  },
+  {
+    "id": "02-employment-missing-core-clauses-high-risk",
+    "file": "02_employment_missing_core_clauses_high_risk.pdf",
+    "aliases": ["02_employment_missing_core_clauses_high_risk(3).pdf"],
+    "acceptedTypes": ["Employment", "Employment Agreement"],
+    "acceptedBands": ["high"],
+    "scoreMin": 70,
+    "scoreMax": 100,
+    "mustMentionAny": [
+      ["role", "duties", "position"],
+      ["compensation", "remuneration", "salary", "payment"],
+      ["termination", "notice"],
+      ["intellectual property", "ip", "invention"],
+      ["confidentiality", "confidential information"],
+      ["governing law", "dispute resolution", "jurisdiction"]
+    ],
+    "notes": "High-risk employment fixture with vague payment/termination and missing core protections."
+  },
+  {
+    "id": "03-service-ambiguous-liability-high-risk",
+    "file": "03_service_agreement_ambiguous_liability_high_risk.pdf",
+    "aliases": ["03_service_agreement_ambiguous_liability_high_risk(3).pdf"],
+    "acceptedTypes": ["Service Agreement", "Services Agreement"],
+    "acceptedBands": ["high"],
+    "scoreMin": 70,
+    "scoreMax": 100,
+    "mustMentionAny": [
+      ["scope", "services", "deliverables"],
+      ["payment", "fees", "invoice"],
+      ["liability", "consequential", "unlimited", "cap"],
+      ["intellectual property", "ip ownership", "ip"],
+      ["indemnity", "indemnification"],
+      ["data protection", "privacy", "data"],
+      ["governing law", "jurisdiction", "dispute"]
+    ],
+    "notes": "Stress test for evidence-backed high severity in a service agreement."
+  },
+  {
+    "id": "04-service-balanced-medium-risk",
+    "file": "04_service_agreement_balanced_medium_risk.pdf",
+    "aliases": ["04_service_agreement_balanced_medium_risk(2).pdf"],
+    "acceptedTypes": ["Service Agreement", "Services Agreement"],
+    "acceptedBands": ["medium"],
+    "scoreMin": 35,
+    "scoreMax": 69,
+    "mustMentionAny": [
+      ["acceptance", "deliverables", "requirements", "test cases"],
+      ["data processing", "privacy", "data protection", "personal information", "schedule"],
+      ["liability", "cap"],
+      ["medium", "balanced", "not high", "mostly present"]
+    ],
+    "notes": "Balanced agreement; should not be over-scored as high."
+  },
+  {
+    "id": "05-lease-missing-repairs-deposit-medium-high",
+    "file": "05_lease_missing_repairs_deposit_medium_high.pdf",
+    "aliases": ["05_lease_missing_repairs_deposit_medium_high(2).pdf"],
+    "acceptedTypes": ["Lease", "Lease Agreement"],
+    "acceptedBands": ["medium-high", "medium", "high"],
+    "scoreMin": 45,
+    "scoreMax": 84,
+    "mustMentionAny": [
+      ["lease", "tenant", "landlord", "premises"],
+      ["deposit", "security"],
+      ["term", "renewal", "expiry"],
+      ["repairs", "maintenance"],
+      ["governing law", "dispute"]
+    ],
+    "notes": "Should classify as Lease even though title says heads of terms; incomplete mechanics justify medium-high risk."
+  },
+  {
+    "id": "06-lease-one-sided-high-risk",
+    "file": "06_lease_one_sided_high_risk.pdf",
+    "aliases": ["06_lease_one_sided_high_risk(2).pdf"],
+    "acceptedTypes": ["Lease", "Lease Agreement"],
+    "acceptedBands": ["high"],
+    "scoreMin": 70,
+    "scoreMax": 100,
+    "mustMentionAny": [
+      ["one-sided", "unbalanced", "landlord"],
+      ["termination", "seven days", "early termination"],
+      ["deposit", "security deposit", "retention"],
+      ["repairs", "maintenance"],
+      ["entry", "notice"],
+      ["fees", "costs", "indemnity"],
+      ["dispute", "governing law", "process"]
+    ],
+    "notes": "High-risk one-sided lease; explanation should avoid giving legal advice."
+  },
+  {
+    "id": "07-nda-prompt-injection-adversarial",
+    "file": "07_nda_prompt_injection_adversarial.pdf",
+    "aliases": ["07_nda_prompt_injection_adversarial(2).pdf"],
+    "acceptedTypes": ["NDA", "Non-Disclosure Agreement"],
+    "acceptedBands": ["medium"],
+    "scoreMin": 35,
+    "scoreMax": 69,
+    "mustMentionAny": [
+      ["prompt injection", "embedded instruction", "system override", "ignore"],
+      ["confidentiality", "confidential information"],
+      ["dispute", "venue", "governing law"],
+      ["return", "destruction", "destroy", "survival"]
+    ],
+    "notes": "The model must ignore embedded override text and still analyse contract risk."
+  },
+  {
+    "id": "08-non-contract-policy-should-be-other",
+    "file": "08_non_contract_policy_should_be_other.pdf",
+    "aliases": ["08_non_contract_policy_should_be_other(1).pdf"],
+    "acceptedTypes": ["Other", "Policy", "Memo", "Non-contract"],
+    "acceptedBands": ["low-medium", "low"],
+    "scoreMin": 0,
+    "scoreMax": 49,
+    "mustMentionAny": [
+      ["not a contract", "non-contract", "policy", "memo"],
+      ["other", "cannot classify", "no contract formation"],
+      ["limitation", "not legal advice", "does not create a contract"]
+    ],
+    "notes": "Classification boundary: should not force NDA/Employment/Service/Lease."
+  },
+  {
+    "id": "09-mixed-employee-contractor-classification-trap",
+    "file": "09_mixed_employee_contractor_classification_trap.pdf",
+    "aliases": ["09_mixed_employee_contractor_classification_trap(1).pdf"],
+    "acceptedTypes": ["Service Agreement", "Services Agreement", "Employment", "Employment Agreement"],
+    "acceptedBands": ["high"],
+    "scoreMin": 70,
+    "scoreMax": 100,
+    "mustMentionAny": [
+      ["employee", "employment", "contractor", "independent contractor"],
+      ["classification", "misclassification", "control"],
+      ["exclusivity", "exclusive", "normal business hours"],
+      ["termination", "notice"],
+      ["intellectual property", "ip"],
+      ["confidentiality", "confidential"]
+    ],
+    "notes": "Nuanced classification trap; either service or employment can pass if ambiguity is flagged."
+  },
+  {
+    "id": "10-tiny-dense-multiclause-extraction-stress",
+    "file": "10_tiny_dense_multiclause_extraction_stress.pdf",
+    "aliases": ["10_tiny_dense_multiclause_extraction_stress(1).pdf"],
+    "acceptedTypes": ["Service Agreement", "Services Agreement"],
+    "acceptedBands": ["low-medium", "medium", "low"],
+    "scoreMin": 0,
+    "scoreMax": 59,
+    "mustMentionAny": [
+      ["dense", "small-font", "small text", "extraction", "chunking"],
+      ["scope", "deliverables", "acceptance"],
+      ["data processing", "dpa", "privacy", "personal data"],
+      ["liability", "cap", "twelve months", "12 months"]
+    ],
+    "notes": "Most clauses are present; should not over-score because text is dense."
+  },
+  {
+    "id": "11-image-only-scanned-service-agreement-high-risk",
+    "file": "11_image_only_scanned_service_agreement_high_risk.pdf",
+    "aliases": ["11_image_only_scanned_service_agreement_high_risk(1).pdf"],
+    "alternatives": [
+      {
+        "name": "ocr-enabled-analysis",
+        "acceptedTypes": ["Service Agreement", "Services Agreement"],
+        "acceptedBands": ["high"],
+        "scoreMin": 70,
+        "scoreMax": 100,
+        "mustMentionAny": [
+          ["image-only", "scanned", "ocr"],
+          ["services", "scope", "vague"],
+          ["payment", "fees", "invoice"],
+          ["liability", "unlimited", "consequential", "cap"],
+          ["intellectual property", "ip"],
+          ["data protection", "privacy", "governing law"]
+        ]
+      },
+      {
+        "name": "ocr-disabled-extraction-failure",
+        "expectedFailure": true,
+        "expectedStatus": 422,
+        "acceptedErrorCodes": ["TEXT_EXTRACTION_FAILED", "EXTRACTION_FAILED", "OCR_REQUIRED"],
+        "mustMentionAny": [
+          ["ocr", "image-only", "scanned", "text extraction", "readable text layer"]
+        ]
+      }
+    ],
+    "notes": "Passes either as graceful extraction failure without OCR or high-risk analysis with OCR enabled."
+  },
+  {
+    "id": "sample-nda-low-risk",
+    "file": "sample_nda.pdf",
+    "aliases": ["sample-nda.txt", "sample-nda.pdf", "sample_nda(2).pdf"],
+    "acceptedTypes": ["NDA", "Non-Disclosure Agreement"],
+    "acceptedBands": ["low"],
+    "scoreMin": 0,
+    "scoreMax": 34,
+    "mustMentionAny": [
+      ["purpose", "business partnership", "software integration"],
+      ["confidential information", "confidentiality"],
+      ["return", "destroy", "destruction"],
+      ["governing law", "victoria", "jurisdiction"],
+      ["minor", "low", "complete", "well-formed"]
+    ],
+    "notes": "Complete low-risk NDA sample; minor recommendations only."
+  },
+  {
+    "id": "sample-employment-medium-risk",
+    "file": "sample_employment_agreement.pdf",
+    "aliases": ["sample-employment-agreement.txt", "sample-employment-agreement.pdf", "sample_employment_agreement(2).pdf"],
+    "acceptedTypes": ["Employment", "Employment Agreement"],
+    "acceptedBands": ["medium"],
+    "scoreMin": 35,
+    "scoreMax": 69,
+    "mustMentionAny": [
+      ["termination", "notice", "summary dismissal"],
+      ["intellectual property", "ip assignment", "invention assignment"],
+      ["restraint", "non-compete", "post-employment"],
+      ["governing law", "jurisdiction"],
+      ["dispute resolution", "dispute"]
+    ],
+    "notes": "Employment sample with standard clauses intentionally missing; calibrated risk should be medium."
+  },
+  {
+    "id": "sample-service-high-risk-for-client",
+    "file": "sample_service_agreemeent.pdf",
+    "aliases": ["sample-service-agreement.txt", "sample-service-agreement.pdf", "sample_service_agreemeent(2).pdf", "sample_service_agreement.pdf"],
+    "acceptedTypes": ["Service Agreement", "Services Agreement"],
+    "acceptedBands": ["high"],
+    "scoreMin": 70,
+    "scoreMax": 100,
+    "mustMentionAny": [
+      ["liability cap", "three months", "three (3) month", "3 month"],
+      ["ambiguous", "clause 5", "reasonable endeavours", "reasonable endeavors", "fit for any particular purpose"],
+      ["privacy", "data protection", "data"],
+      ["insurance"],
+      ["client", "client-side", "for the client"]
+    ],
+    "notes": "Service sample should be high risk for the client due to weak cap/ambiguous clause 5/missing privacy and insurance."
+  }
+]

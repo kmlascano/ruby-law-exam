@@ -1,27 +1,38 @@
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 import { analyseContract } from '../services/contractService';
 import { contractStore } from '../services/contractStore';
+import { isHttpError } from '../errors/httpError';
+
+function sendError(res: Response, statusCode: number, code: string, message: string): void {
+  res.status(statusCode).json({ error: { code, message } });
+}
 
 export async function uploadContract(req: Request, res: Response): Promise<void> {
   if (!req.file) {
-    res.status(400).json({ error: { code: 'NO_FILE', message: 'No file uploaded' } });
+    sendError(res, 400, 'NO_FILE', 'No file uploaded.');
     return;
   }
 
   try {
     const result = await analyseContract(req.file.buffer, req.file.mimetype, req.file.originalname);
     res.status(201).json({ data: result });
-  } catch (err) {
-    const message = err instanceof Error ? err.message : 'Analysis failed';
-    res.status(500).json({ error: { code: 'ANALYSIS_FAILED', message } });
+  } catch (error) {
+    if (isHttpError(error)) {
+      sendError(res, error.statusCode, error.code, error.message);
+      return;
+    }
+
+    sendError(res, 500, 'ANALYSIS_FAILED', 'The contract could not be analysed.');
   }
 }
 
 export function getContract(req: Request, res: Response): void {
   const record = contractStore.get(req.params['id'] ?? '');
+
   if (!record) {
-    res.status(404).json({ error: { code: 'NOT_FOUND', message: 'Contract not found' } });
+    sendError(res, 404, 'NOT_FOUND', 'Contract not found.');
     return;
   }
+
   res.json({ data: record });
 }
